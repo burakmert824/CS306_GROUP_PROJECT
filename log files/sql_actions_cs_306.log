@@ -1,0 +1,852 @@
+[1, 19:22:03] create database project: Running...
+[1, 19:22:03] create database project: 1 row(s) affected
+[2, 19:22:03] use project: Running...
+[2, 19:22:03] use project: 0 row(s) affected
+[3, 19:25:21] CREATE TABLE students
+(
+	C_Code CHAR(50),
+	C_Name CHAR(50),
+	primary key (C_Code)
+): Running...
+[3, 19:25:21] CREATE TABLE students
+(
+	C_Code CHAR(50),
+	C_Name CHAR(50),
+	primary key (C_Code)
+): 0 row(s) affected
+[4, 19:25:40] drop table students: Running...
+[4, 19:25:40] drop table students: 0 row(s) affected
+[5, 19:25:52] CREATE TABLE counties
+(
+	C_Code CHAR(50),
+	C_Name CHAR(50),
+	primary key (C_Code)
+): Running...
+[5, 19:25:52] CREATE TABLE counties
+(
+	C_Code CHAR(50),
+	C_Name CHAR(50),
+	primary key (C_Code)
+): 0 row(s) affected
+[6, 19:27:57] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[6, 19:27:57] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[7, 19:27:57] SHOW DATABASES: Executing 
+[7, 19:27:57] SHOW DATABASES: OK
+[8, 19:28:00] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[8, 19:28:00] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[9, 19:28:00] SHOW COLUMNS FROM `project`.`counties`: Executing 
+[9, 19:28:00] SHOW COLUMNS FROM `project`.`counties`: OK
+[10, 19:28:07] PREPARE stmt FROM 'INSERT INTO `project`.`counties` (`C_Code`,`C_Name`) VALUES(?,?)': Executing 
+[10, 19:28:07] PREPARE stmt FROM 'INSERT INTO `project`.`counties` (`C_Code`,`C_Name`) VALUES(?,?)': OK
+[11, 19:28:13] DEALLOCATE PREPARE stmt: Executing 
+[11, 19:28:13] DEALLOCATE PREPARE stmt: OK
+[12, 19:28:33] select * from countries
+LIMIT 0, 1000
+: Running...
+[12, 19:28:33] select * from countries
+LIMIT 0, 1000
+: Error Code: 1146. Table 'project.countries' doesn't exist
+[13, 19:28:36] select * from countries
+LIMIT 0, 1000
+: Running...
+[13, 19:28:36] select * from countries
+LIMIT 0, 1000
+: Error Code: 1146. Table 'project.countries' doesn't exist
+[14, 19:29:03] drop table counties: Running...
+[14, 19:29:03] drop table counties: 0 row(s) affected
+[15, 19:29:10] CREATE TABLE countries
+(
+	C_Code CHAR(50),
+	C_Name CHAR(50),
+	primary key (C_Code)
+): Running...
+[15, 19:29:10] CREATE TABLE countries
+(
+	C_Code CHAR(50),
+	C_Name CHAR(50),
+	primary key (C_Code)
+): 0 row(s) affected
+[16, 19:29:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[16, 19:29:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[17, 19:29:22] SHOW DATABASES: Executing 
+[17, 19:29:22] SHOW DATABASES: OK
+[18, 19:29:23] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[18, 19:29:23] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[19, 19:29:23] SHOW COLUMNS FROM `project`.`countries`: Executing 
+[19, 19:29:23] SHOW COLUMNS FROM `project`.`countries`: OK
+[20, 19:29:27] PREPARE stmt FROM 'INSERT INTO `project`.`countries` (`C_Code`,`C_Name`) VALUES(?,?)': Executing 
+[20, 19:29:27] PREPARE stmt FROM 'INSERT INTO `project`.`countries` (`C_Code`,`C_Name`) VALUES(?,?)': OK
+[21, 19:29:32] DEALLOCATE PREPARE stmt: Executing 
+[21, 19:29:32] DEALLOCATE PREPARE stmt: OK
+[22, 19:29:36] select * from countries
+LIMIT 0, 1000
+: Running...
+[22, 19:29:36] select * from countries
+LIMIT 0, 1000
+: Fetching...
+[22, 19:29:36] select * from countries
+LIMIT 0, 1000
+: 284 row(s) returned
+[23, 19:31:12] drop table countries: Running...
+[23, 19:31:13] drop table countries: 0 row(s) affected
+[24, 19:31:18] CREATE TABLE countries
+(
+	C_Code CHAR(255),
+	C_Name CHAR(255),
+	primary key (C_Code)
+): Running...
+[24, 19:31:18] CREATE TABLE countries
+(
+	C_Code CHAR(255),
+	C_Name CHAR(255),
+	primary key (C_Code)
+): 0 row(s) affected
+[25, 19:31:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[25, 19:31:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[26, 19:31:25] SHOW DATABASES: Executing 
+[26, 19:31:25] SHOW DATABASES: OK
+[27, 19:31:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[27, 19:31:26] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[28, 19:31:26] SHOW COLUMNS FROM `project`.`countries`: Executing 
+[28, 19:31:26] SHOW COLUMNS FROM `project`.`countries`: OK
+[29, 19:31:28] PREPARE stmt FROM 'INSERT INTO `project`.`countries` (`C_Code`,`C_Name`) VALUES(?,?)': Executing 
+[29, 19:31:28] PREPARE stmt FROM 'INSERT INTO `project`.`countries` (`C_Code`,`C_Name`) VALUES(?,?)': OK
+[30, 19:31:33] DEALLOCATE PREPARE stmt: Executing 
+[30, 19:31:33] DEALLOCATE PREPARE stmt: OK
+[31, 19:31:39] select * from countries
+LIMIT 0, 1000
+: Running...
+[31, 19:31:39] select * from countries
+LIMIT 0, 1000
+: Fetching...
+[31, 19:31:39] select * from countries
+LIMIT 0, 1000
+: 284 row(s) returned
+[32, 19:38:10] CREATE TABLE substance_use
+(
+	C_Name CHAR(255),
+	C_Code CHAR(255),
+	Year integer,
+    drugdeaths integer,
+    alcoholdeaths integer,
+    FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE SET NULL
+): Running...
+[32, 19:38:10] CREATE TABLE substance_use
+(
+	C_Name CHAR(255),
+	C_Code CHAR(255),
+	Year integer,
+    drugdeaths integer,
+    alcoholdeaths integer,
+    FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE SET NULL
+): 0 row(s) affected
+[33, 19:38:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[33, 19:38:22] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[34, 19:38:22] SHOW DATABASES: Executing 
+[34, 19:38:22] SHOW DATABASES: OK
+[35, 19:38:23] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[35, 19:38:23] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[36, 19:38:23] SHOW COLUMNS FROM `project`.`substance_use`: Executing 
+[36, 19:38:23] SHOW COLUMNS FROM `project`.`substance_use`: OK
+[37, 19:38:33] PREPARE stmt FROM 'INSERT INTO `project`.`substance_use` (`alcoholdeaths`,`C_Code`,`C_Name`,`drugdeaths`,`Year`) VALUES(?,?,?,?,?)': Executing 
+[37, 19:38:33] PREPARE stmt FROM 'INSERT INTO `project`.`substance_use` (`alcoholdeaths`,`C_Code`,`C_Name`,`drugdeaths`,`Year`) VALUES(?,?,?,?,?)': OK
+[38, 19:40:11] DEALLOCATE PREPARE stmt: Executing 
+[38, 19:40:11] DEALLOCATE PREPARE stmt: OK
+[39, 19:42:11] select * from substance_use
+LIMIT 0, 1000
+: Running...
+[39, 19:42:11] select * from substance_use
+LIMIT 0, 1000
+: Fetching...
+[39, 19:42:11] select * from substance_use
+LIMIT 0, 1000
+: 1000 row(s) returned
+[1, 19:43:52] use project: Running...
+[1, 19:43:52] use project: 0 row(s) affected
+[2, 19:44:11] drop table substance_use: Running...
+[2, 19:44:11] drop table substance_use: 0 row(s) affected
+[3, 19:44:20] CREATE TABLE substance_use
+(
+	C_Name CHAR(255),
+	C_Code CHAR(255),
+	Year integer,
+    drugdeaths integer,
+    alcoholdeaths integer,
+    primary key (C_Code, year),
+    FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE SET NULL
+): Running...
+[3, 19:44:20] CREATE TABLE substance_use
+(
+	C_Name CHAR(255),
+	C_Code CHAR(255),
+	Year integer,
+    drugdeaths integer,
+    alcoholdeaths integer,
+    primary key (C_Code, year),
+    FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE SET NULL
+): Error Code: 1830. Column 'C_Code' cannot be NOT NULL: needed in a foreign key constraint 'substance_use_ibfk_1' SET NULL
+[4, 19:46:59] CREATE TABLE substance_use (
+    C_Name CHAR(255),
+    C_Code CHAR(255) NOT NULL,
+    Year INTEGER,
+    drugdeaths INTEGER,
+    alcoholdeaths INTEGER,
+    PRIMARY KEY (C_Code, Year),
+    FOREIGN KEY (C_Code)
+        REFERENCES countries(C_Code)
+        ON DELETE CASCADE
+): Running...
+[4, 19:46:59] CREATE TABLE substance_use (
+    C_Name CHAR(255),
+    C_Code CHAR(255) NOT NULL,
+    Year INTEGER,
+    drugdeaths INTEGER,
+    alcoholdeaths INTEGER,
+    PRIMARY KEY (C_Code, Year),
+    FOREIGN KEY (C_Code)
+        REFERENCES countries(C_Code)
+        ON DELETE CASCADE
+): 0 row(s) affected
+[5, 19:47:08] SHOW COLUMNS FROM `project`.`substance_use`: Executing 
+[5, 19:47:08] SHOW COLUMNS FROM `project`.`substance_use`: OK
+[6, 19:47:35] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[6, 19:47:35] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[7, 19:47:35] SHOW DATABASES: Executing 
+[7, 19:47:35] SHOW DATABASES: OK
+[8, 19:47:36] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[8, 19:47:36] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[9, 19:47:36] SHOW COLUMNS FROM `project`.`substance_use`: Executing 
+[9, 19:47:36] SHOW COLUMNS FROM `project`.`substance_use`: OK
+[10, 19:47:42] PREPARE stmt FROM 'INSERT INTO `project`.`substance_use` (`alcoholdeaths`,`C_Code`,`C_Name`,`drugdeaths`,`Year`) VALUES(?,?,?,?,?)': Executing 
+[10, 19:47:42] PREPARE stmt FROM 'INSERT INTO `project`.`substance_use` (`alcoholdeaths`,`C_Code`,`C_Name`,`drugdeaths`,`Year`) VALUES(?,?,?,?,?)': OK
+[11, 19:49:19] DEALLOCATE PREPARE stmt: Executing 
+[11, 19:49:19] DEALLOCATE PREPARE stmt: OK
+[12, 19:49:41] SELECT * FROM substance_use
+LIMIT 0, 1000
+: Running...
+[12, 19:49:41] SELECT * FROM substance_use
+LIMIT 0, 1000
+: Fetching...
+[12, 19:49:41] SELECT * FROM substance_use
+LIMIT 0, 1000
+: 1000 row(s) returned
+[1, 21:10:45] USE project: Running...
+[1, 21:10:45] USE project: 0 row(s) affected
+[2, 21:10:56] drop table countries: Running...
+[2, 21:10:56] drop table countries: Error Code: 3730. Cannot drop table 'countries' referenced by a foreign key constraint 'substance_use_ibfk_1' on table 'substance_use'.
+[3, 21:11:07] drop table countries: Running...
+[3, 21:11:07] drop table countries: Error Code: 3730. Cannot drop table 'countries' referenced by a foreign key constraint 'substance_use_ibfk_1' on table 'substance_use'.
+[4, 21:11:28] drop table countries: Running...
+[4, 21:11:28] drop table countries: Error Code: 3730. Cannot drop table 'countries' referenced by a foreign key constraint 'substance_use_ibfk_1' on table 'substance_use'.
+[5, 21:11:57] drop table substance_use: Running...
+[5, 21:11:57] drop table substance_use: 0 row(s) affected
+[6, 21:12:00] drop table countries: Running...
+[6, 21:12:00] drop table countries: 0 row(s) affected
+[7, 21:12:33] CREATE TABLE countries (
+    C_Code CHAR(32),
+    C_Name CHAR(100),
+    PRIMARY KEY (C_Code)
+): Running...
+[7, 21:12:33] CREATE TABLE countries (
+    C_Code CHAR(32),
+    C_Name CHAR(100),
+    PRIMARY KEY (C_Code)
+): 0 row(s) affected
+[8, 21:13:02] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[8, 21:13:02] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[9, 21:13:02] SHOW DATABASES: Executing 
+[9, 21:13:02] SHOW DATABASES: OK
+[10, 21:13:06] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[10, 21:13:06] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[11, 21:13:06] SHOW COLUMNS FROM `project`.`countries`: Executing 
+[11, 21:13:06] SHOW COLUMNS FROM `project`.`countries`: OK
+[12, 21:13:11] PREPARE stmt FROM 'INSERT INTO `project`.`countries` (`C_Code`,`C_Name`) VALUES(?,?)': Executing 
+[12, 21:13:11] PREPARE stmt FROM 'INSERT INTO `project`.`countries` (`C_Code`,`C_Name`) VALUES(?,?)': OK
+[13, 21:13:15] DEALLOCATE PREPARE stmt: Executing 
+[13, 21:13:15] DEALLOCATE PREPARE stmt: OK
+[14, 21:13:21] SELECT * FROM countries
+LIMIT 0, 1000
+: Running...
+[14, 21:13:21] SELECT * FROM countries
+LIMIT 0, 1000
+: Fetching...
+[14, 21:13:21] SELECT * FROM countries
+LIMIT 0, 1000
+: 284 row(s) returned
+[15, 21:14:02] SELECT * FROM countries
+LIMIT 0, 1000
+: Running...
+[15, 21:14:02] SELECT * FROM countries
+LIMIT 0, 1000
+: Fetching...
+[15, 21:14:02] SELECT * FROM countries
+LIMIT 0, 1000
+: 284 row(s) returned
+[16, 21:19:53] CREATE TABLE substance_use (
+    C_Code CHAR(32) NOT NULL,
+    YYear INTEGER,
+    drugdeaths INTEGER,
+    alcoholdeaths INTEGER,
+    PRIMARY KEY (C_Code, YYear),
+    FOREIGN KEY (C_Code)
+        REFERENCES countries(C_Code)
+        ON DELETE CASCADE
+): Running...
+[16, 21:19:53] CREATE TABLE substance_use (
+    C_Code CHAR(32) NOT NULL,
+    YYear INTEGER,
+    drugdeaths INTEGER,
+    alcoholdeaths INTEGER,
+    PRIMARY KEY (C_Code, YYear),
+    FOREIGN KEY (C_Code)
+        REFERENCES countries(C_Code)
+        ON DELETE CASCADE
+): 0 row(s) affected
+[17, 21:20:01] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[17, 21:20:01] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[18, 21:20:01] SHOW DATABASES: Executing 
+[18, 21:20:01] SHOW DATABASES: OK
+[19, 21:20:02] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[19, 21:20:02] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[20, 21:20:02] SHOW COLUMNS FROM `project`.`substance_use`: Executing 
+[20, 21:20:02] SHOW COLUMNS FROM `project`.`substance_use`: OK
+[21, 21:20:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[21, 21:20:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[22, 21:20:11] SHOW COLUMNS FROM `project`.`substance_use`: Executing 
+[22, 21:20:11] SHOW COLUMNS FROM `project`.`substance_use`: OK
+[23, 21:20:35] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[23, 21:20:35] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[24, 21:20:35] SHOW DATABASES: Executing 
+[24, 21:20:35] SHOW DATABASES: OK
+[25, 21:20:37] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[25, 21:20:37] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[26, 21:20:37] SHOW COLUMNS FROM `project`.`substance_use`: Executing 
+[26, 21:20:37] SHOW COLUMNS FROM `project`.`substance_use`: OK
+[27, 21:20:59] PREPARE stmt FROM 'INSERT INTO `project`.`substance_use` (`alcoholdeaths`,`C_Code`,`drugdeaths`,`YYear`) VALUES(?,?,?,?)': Executing 
+[27, 21:20:59] PREPARE stmt FROM 'INSERT INTO `project`.`substance_use` (`alcoholdeaths`,`C_Code`,`drugdeaths`,`YYear`) VALUES(?,?,?,?)': OK
+[28, 21:22:39] DEALLOCATE PREPARE stmt: Executing 
+[28, 21:22:39] DEALLOCATE PREPARE stmt: OK
+[29, 21:22:49] SELECT * FROM substance_use
+LIMIT 0, 1000
+: Running...
+[29, 21:22:49] SELECT * FROM substance_use
+LIMIT 0, 1000
+: Fetching...
+[29, 21:22:49] SELECT * FROM substance_use
+LIMIT 0, 1000
+: 1000 row(s) returned
+[30, 21:23:10] CREATE TABLE airpol_occure(
+	C_Code CHAR(32) NOT NULL,
+	deathcounts INTEGER,
+	YYear INTEGER,
+	Household_FosilFuel INTEGER,
+	PRIMARY KEY (C_Code,YYear),
+    FOREIGN KEY (C_Code)
+        REFERENCES countries(C_Code)
+        ON DELETE CASCADE
+): Running...
+[30, 21:23:10] CREATE TABLE airpol_occure(
+	C_Code CHAR(32) NOT NULL,
+	deathcounts INTEGER,
+	YYear INTEGER,
+	Household_FosilFuel INTEGER,
+	PRIMARY KEY (C_Code,YYear),
+    FOREIGN KEY (C_Code)
+        REFERENCES countries(C_Code)
+        ON DELETE CASCADE
+): 0 row(s) affected
+[31, 21:23:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[31, 21:23:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[32, 21:23:39] SHOW DATABASES: Executing 
+[32, 21:23:39] SHOW DATABASES: OK
+[33, 21:23:42] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[33, 21:23:42] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[34, 21:23:42] SHOW COLUMNS FROM `project`.`airpol_occure`: Executing 
+[34, 21:23:42] SHOW COLUMNS FROM `project`.`airpol_occure`: OK
+[35, 21:24:11] PREPARE stmt FROM 'INSERT INTO `project`.`airpol_occure` (`deathcounts`,`C_Code`,`Household_FosilFuel`,`YYear`) VALUES(?,?,?,?)': Executing 
+[35, 21:24:11] PREPARE stmt FROM 'INSERT INTO `project`.`airpol_occure` (`deathcounts`,`C_Code`,`Household_FosilFuel`,`YYear`) VALUES(?,?,?,?)': OK
+[36, 21:25:47] DEALLOCATE PREPARE stmt: Executing 
+[36, 21:25:47] DEALLOCATE PREPARE stmt: OK
+[37, 21:25:56] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: Running...
+[37, 21:25:56] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: Fetching...
+[37, 21:25:56] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: 1000 row(s) returned
+[38, 21:27:26] CREATE TABLE LifeExpact(
+	C_Code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	Life_ex_value double,
+	PRIMARY KEY (C_Code,YYear),
+	FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE CASCADE
+): Running...
+[38, 21:27:26] CREATE TABLE LifeExpact(
+	C_Code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	Life_ex_value double,
+	PRIMARY KEY (C_Code,YYear),
+	FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE CASCADE
+): 0 row(s) affected
+[39, 21:27:41] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[39, 21:27:41] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[40, 21:27:41] SHOW DATABASES: Executing 
+[40, 21:27:41] SHOW DATABASES: OK
+[41, 21:27:43] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[41, 21:27:43] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[42, 21:27:43] SHOW COLUMNS FROM `project`.`lifeexpact`: Executing 
+[42, 21:27:43] SHOW COLUMNS FROM `project`.`lifeexpact`: OK
+[43, 21:27:48] PREPARE stmt FROM 'INSERT INTO `project`.`lifeexpact` (`Life_ex_value`,`C_Code`,`YYear`) VALUES(?,?,?)': Executing 
+[43, 21:27:48] PREPARE stmt FROM 'INSERT INTO `project`.`lifeexpact` (`Life_ex_value`,`C_Code`,`YYear`) VALUES(?,?,?)': OK
+[44, 21:29:40] CREATE TABLE Obesity_Report (
+	C_Code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	daily_calory INTEGER,
+	prevalence_overweight double,
+	prevalence_obesity double,
+	death_rate double,
+	PRIMARY KEY (YYear, C_Code),
+	FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE CASCADE
+): Running...
+[44, 21:29:40] CREATE TABLE Obesity_Report (
+	C_Code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	daily_calory INTEGER,
+	prevalence_overweight double,
+	prevalence_obesity double,
+	death_rate double,
+	PRIMARY KEY (YYear, C_Code),
+	FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE CASCADE
+): 0 row(s) affected
+[45, 21:29:57] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[45, 21:29:57] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[46, 21:29:57] SHOW DATABASES: Executing 
+[46, 21:29:57] SHOW DATABASES: OK
+[47, 21:30:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[47, 21:30:03] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[48, 21:30:03] SHOW COLUMNS FROM `project`.`obesity_report`: Executing 
+[48, 21:30:03] SHOW COLUMNS FROM `project`.`obesity_report`: OK
+[49, 21:30:18] PREPARE stmt FROM 'INSERT INTO `project`.`obesity_report` (`C_Code`,`death_rate`,`prevalence_obesity`,`prevalence_overweight`,`daily_calory`,`YYear`) VALUES(?,?,?,?,?,?)': Executing 
+[49, 21:30:18] PREPARE stmt FROM 'INSERT INTO `project`.`obesity_report` (`C_Code`,`death_rate`,`prevalence_obesity`,`prevalence_overweight`,`daily_calory`,`YYear`) VALUES(?,?,?,?,?,?)': OK
+[50, 21:31:07] DEALLOCATE PREPARE stmt: Executing 
+[50, 21:31:07] DEALLOCATE PREPARE stmt: OK
+[51, 21:31:14] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: Running...
+[51, 21:31:14] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: Fetching...
+[51, 21:31:14] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: 0 row(s) returned
+[52, 21:31:22] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: Running...
+[52, 21:31:22] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: Fetching...
+[52, 21:31:22] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: 0 row(s) returned
+[53, 21:31:30] DEALLOCATE PREPARE stmt: Executing 
+[53, 21:31:30] DEALLOCATE PREPARE stmt: Error Code: 1243
+Unknown prepared statement handler (stmt) given to DEALLOCATE PREPARE
+[54, 21:33:03] drop table LifeExpact: Running...
+[54, 21:33:03] drop table LifeExpact: 0 row(s) affected
+[55, 21:33:13] CREATE TABLE LifeExpact(
+	C_Code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	Life_ex_value DECIMAL(10,7),
+	PRIMARY KEY (C_Code,YYear),
+	FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE CASCADE
+): Running...
+[55, 21:33:13] CREATE TABLE LifeExpact(
+	C_Code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	Life_ex_value DECIMAL(10,7),
+	PRIMARY KEY (C_Code,YYear),
+	FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE CASCADE
+): 0 row(s) affected
+[56, 21:33:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[56, 21:33:25] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[57, 21:33:25] SHOW DATABASES: Executing 
+[57, 21:33:25] SHOW DATABASES: OK
+[58, 21:33:48] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[58, 21:33:48] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[59, 21:33:48] SHOW DATABASES: Executing 
+[59, 21:33:48] SHOW DATABASES: OK
+[60, 21:33:49] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[60, 21:33:49] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[61, 21:33:49] SHOW COLUMNS FROM `project`.`lifeexpact`: Executing 
+[61, 21:33:49] SHOW COLUMNS FROM `project`.`lifeexpact`: OK
+[62, 21:33:55] PREPARE stmt FROM 'INSERT INTO `project`.`lifeexpact` (`Life_ex_value`,`C_Code`,`YYear`) VALUES(?,?,?)': Executing 
+[62, 21:33:55] PREPARE stmt FROM 'INSERT INTO `project`.`lifeexpact` (`Life_ex_value`,`C_Code`,`YYear`) VALUES(?,?,?)': OK
+[63, 21:39:02] DEALLOCATE PREPARE stmt: Executing 
+[63, 21:39:02] DEALLOCATE PREPARE stmt: OK
+[64, 21:39:11] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: Running...
+[64, 21:39:11] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: Fetching...
+[64, 21:39:11] SELECT * FROM LifeExpact
+LIMIT 0, 1000
+: 1000 row(s) returned
+[65, 21:39:25] CREATE TABLE Obesity_Report (
+	C_Code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	daily_calory INTEGER,
+	prevalence_overweight DECIMAL(10,2),
+	prevalence_obesity DECIMAL(10,2),
+	death_rate DECIMAL(10,2),
+	PRIMARY KEY (YYear, C_Code),
+	FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE CASCADE
+): Running...
+[65, 21:39:25] CREATE TABLE Obesity_Report (
+	C_Code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	daily_calory INTEGER,
+	prevalence_overweight DECIMAL(10,2),
+	prevalence_obesity DECIMAL(10,2),
+	death_rate DECIMAL(10,2),
+	PRIMARY KEY (YYear, C_Code),
+	FOREIGN KEY (C_Code) REFERENCES countries(C_Code) ON DELETE CASCADE
+): Error Code: 1050. Table 'obesity_report' already exists
+[66, 21:39:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[66, 21:39:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[67, 21:39:39] SHOW DATABASES: Executing 
+[67, 21:39:39] SHOW DATABASES: OK
+[68, 21:39:41] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[68, 21:39:41] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[69, 21:39:41] SHOW COLUMNS FROM `project`.`obesity_report`: Executing 
+[69, 21:39:41] SHOW COLUMNS FROM `project`.`obesity_report`: OK
+[70, 21:39:51] PREPARE stmt FROM 'INSERT INTO `project`.`obesity_report` (`C_Code`,`death_rate`,`prevalence_obesity`,`prevalence_overweight`,`daily_calory`,`YYear`) VALUES(?,?,?,?,?,?)': Executing 
+[70, 21:39:51] PREPARE stmt FROM 'INSERT INTO `project`.`obesity_report` (`C_Code`,`death_rate`,`prevalence_obesity`,`prevalence_overweight`,`daily_calory`,`YYear`) VALUES(?,?,?,?,?,?)': OK
+[71, 21:41:05] DEALLOCATE PREPARE stmt: Executing 
+[71, 21:41:05] DEALLOCATE PREPARE stmt: OK
+[72, 21:42:08] SELECT * FROM Obesity_Report
+LIMIT 0, 1000
+: Running...
+[72, 21:42:08] SELECT * FROM Obesity_Report
+LIMIT 0, 1000
+: Fetching...
+[72, 21:42:08] SELECT * FROM Obesity_Report
+LIMIT 0, 1000
+: 1000 row(s) returned
+[73, 21:42:34] CREATE TABLE Smoke_Examine(
+	C_code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	consumption_per_smoker_per_day DECIMAL(10,7),
+	death_rate_per_100000_people DECIMAL(10,7),
+	deaths INTEGER,
+	share_of_adults_who_smoke DECIMAL(10,7),
+	PRIMARY KEY (C_code, YYear),
+	FOREIGN KEY (C_code) REFERENCES countries(C_code) ON DELETE CASCADE
+): Running...
+[73, 21:42:34] CREATE TABLE Smoke_Examine(
+	C_code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	consumption_per_smoker_per_day DECIMAL(10,7),
+	death_rate_per_100000_people DECIMAL(10,7),
+	deaths INTEGER,
+	share_of_adults_who_smoke DECIMAL(10,7),
+	PRIMARY KEY (C_code, YYear),
+	FOREIGN KEY (C_code) REFERENCES countries(C_code) ON DELETE CASCADE
+): 0 row(s) affected
+[74, 21:42:46] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[74, 21:42:46] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[75, 21:42:46] SHOW DATABASES: Executing 
+[75, 21:42:46] SHOW DATABASES: OK
+[76, 21:42:48] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[76, 21:42:48] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[77, 21:42:48] SHOW COLUMNS FROM `project`.`smoke_examine`: Executing 
+[77, 21:42:48] SHOW COLUMNS FROM `project`.`smoke_examine`: OK
+[78, 21:43:03] PREPARE stmt FROM 'INSERT INTO `project`.`smoke_examine` (`C_code`,`share_of_adults_who_smoke`,`deaths`,`death_rate_per_100000_people`,`consumption_per_smoker_per_day`,`YYear`) VALUES(?,?,?,?,?,?)': Executing 
+[78, 21:43:03] PREPARE stmt FROM 'INSERT INTO `project`.`smoke_examine` (`C_code`,`share_of_adults_who_smoke`,`deaths`,`death_rate_per_100000_people`,`consumption_per_smoker_per_day`,`YYear`) VALUES(?,?,?,?,?,?)': OK
+[79, 21:43:16] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: Running...
+[79, 21:43:16] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: Fetching...
+[79, 21:43:16] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: 1000 row(s) returned
+[80, 21:44:21] DEALLOCATE PREPARE stmt: Executing 
+[80, 21:44:21] DEALLOCATE PREPARE stmt: OK
+[81, 21:44:37] SELECT * FROM Smoke_Examine
+LIMIT 0, 1000
+: Running...
+[81, 21:44:37] SELECT * FROM Smoke_Examine
+LIMIT 0, 1000
+: Fetching...
+[81, 21:44:37] SELECT * FROM Smoke_Examine
+LIMIT 0, 1000
+: 1000 row(s) returned
+[82, 21:46:05] drop table Smoke_Examine: Running...
+[82, 21:46:06] drop table Smoke_Examine: 0 row(s) affected
+[83, 21:46:11] CREATE TABLE Smoke_Examine(
+	C_code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	consumption_per_smoker_per_day DECIMAL(10,7),
+	death_rate_per_100000_people DECIMAL(10,7),
+	deaths INTEGER,
+	share_of_adults_who_smoke DECIMAL(10,7),
+	PRIMARY KEY (C_code, YYear),
+	FOREIGN KEY (C_code) REFERENCES countries(C_code) ON DELETE CASCADE
+): Running...
+[83, 21:46:11] CREATE TABLE Smoke_Examine(
+	C_code CHAR(32) NOT NULL,
+	YYear INTEGER,
+	consumption_per_smoker_per_day DECIMAL(10,7),
+	death_rate_per_100000_people DECIMAL(10,7),
+	deaths INTEGER,
+	share_of_adults_who_smoke DECIMAL(10,7),
+	PRIMARY KEY (C_code, YYear),
+	FOREIGN KEY (C_code) REFERENCES countries(C_code) ON DELETE CASCADE
+): 0 row(s) affected
+[84, 21:46:14] LOAD DATA LOCAL INFILE 'C:\Users\Pc\Desktop\CS306_GROUP_PROJECT-main\Smoking.csv'
+INTO TABLE Smoke_Examine
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(C_code, year, consumption_per_smoker_per_day, @death_rate_per_100000_people, @deaths, share_of_adults_who_smoke)
+SET deaths = IF(@deaths = '', NULL, @deaths), 
+    death_rate_per_100000_people = IF(@death_rate_per_100000_people = '', NULL, @death_rate_per_100000_people): Running...
+[84, 21:46:14] LOAD DATA LOCAL INFILE 'C:\Users\Pc\Desktop\CS306_GROUP_PROJECT-main\Smoking.csv'
+INTO TABLE Smoke_Examine
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(C_code, year, consumption_per_smoker_per_day, @death_rate_per_100000_people, @deaths, share_of_adults_who_smoke)
+SET deaths = IF(@deaths = '', NULL, @deaths), 
+    death_rate_per_100000_people = IF(@death_rate_per_100000_people = '', NULL, @death_rate_per_100000_people): Error Code: 1148. The used command is not allowed with this MySQL version
+[85, 21:46:52] LOAD DATA LOCAL INFILE '\Users\Pc\Desktop\CS306_GROUP_PROJECT-main\Smoking.csv'
+INTO TABLE Smoke_Examine
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(C_code, year, consumption_per_smoker_per_day, @death_rate_per_100000_people, @deaths, share_of_adults_who_smoke)
+SET deaths = IF(@deaths = '', NULL, @deaths), 
+    death_rate_per_100000_people = IF(@death_rate_per_100000_people = '', NULL, @death_rate_per_100000_people): Running...
+[85, 21:46:52] LOAD DATA LOCAL INFILE '\Users\Pc\Desktop\CS306_GROUP_PROJECT-main\Smoking.csv'
+INTO TABLE Smoke_Examine
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(C_code, year, consumption_per_smoker_per_day, @death_rate_per_100000_people, @deaths, share_of_adults_who_smoke)
+SET deaths = IF(@deaths = '', NULL, @deaths), 
+    death_rate_per_100000_people = IF(@death_rate_per_100000_people = '', NULL, @death_rate_per_100000_people): Error Code: 1148. The used command is not allowed with this MySQL version
+[86, 21:54:36] LOAD DATA LOCAL INFILE 'C:\Users\Pc\Desktop\CS306_GROUP_PROJECT-main\Smoking.csv'
+INTO TABLE Smoke_Examine
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(C_code, YYear, consumption_per_smoker_per_day, @death_rate_per_100000_people, @deaths, share_of_adults_who_smoke)
+SET deaths = IF(@deaths = '', NULL, @deaths), 
+    death_rate_per_100000_people = IF(@death_rate_per_100000_people = '', NULL, @death_rate_per_100000_people): Running...
+[86, 21:54:36] LOAD DATA LOCAL INFILE 'C:\Users\Pc\Desktop\CS306_GROUP_PROJECT-main\Smoking.csv'
+INTO TABLE Smoke_Examine
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(C_code, YYear, consumption_per_smoker_per_day, @death_rate_per_100000_people, @deaths, share_of_adults_who_smoke)
+SET deaths = IF(@deaths = '', NULL, @deaths), 
+    death_rate_per_100000_people = IF(@death_rate_per_100000_people = '', NULL, @death_rate_per_100000_people): Error Code: 1148. The used command is not allowed with this MySQL version
+[87, 21:55:33] drop table Smoke_Examine: Running...
+[87, 21:55:34] drop table Smoke_Examine: 0 row(s) affected
+[88, 21:55:36] CREATE TABLE Smoke_Examine (
+  C_code CHAR(32) NOT NULL,
+  YYear INTEGER,
+  consumption_per_smoker_per_day DECIMAL(10,7) NULL,
+  death_rate_per_100000_people DECIMAL(10,7) NULL,
+  deaths INTEGER NULL,
+  share_of_adults_who_smoke DECIMAL(10,7) NULL,
+  PRIMARY KEY (C_code, YYear),
+  FOREIGN KEY (C_code) REFERENCES countries(C_code) ON DELETE CASCADE
+): Running...
+[88, 21:55:36] CREATE TABLE Smoke_Examine (
+  C_code CHAR(32) NOT NULL,
+  YYear INTEGER,
+  consumption_per_smoker_per_day DECIMAL(10,7) NULL,
+  death_rate_per_100000_people DECIMAL(10,7) NULL,
+  deaths INTEGER NULL,
+  share_of_adults_who_smoke DECIMAL(10,7) NULL,
+  PRIMARY KEY (C_code, YYear),
+  FOREIGN KEY (C_code) REFERENCES countries(C_code) ON DELETE CASCADE
+): 0 row(s) affected
+[89, 21:55:49] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[89, 21:55:49] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[90, 21:55:49] SHOW DATABASES: Executing 
+[90, 21:55:49] SHOW DATABASES: OK
+[91, 21:55:50] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[91, 21:55:50] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[92, 21:55:50] SHOW COLUMNS FROM `project`.`smoke_examine`: Executing 
+[92, 21:55:50] SHOW COLUMNS FROM `project`.`smoke_examine`: OK
+[93, 21:55:57] PREPARE stmt FROM 'INSERT INTO `project`.`smoke_examine` (`C_code`,`share_of_adults_who_smoke`,`deaths`,`death_rate_per_100000_people`,`consumption_per_smoker_per_day`,`YYear`) VALUES(?,?,?,?,?,?)': Executing 
+[93, 21:55:57] PREPARE stmt FROM 'INSERT INTO `project`.`smoke_examine` (`C_code`,`share_of_adults_who_smoke`,`deaths`,`death_rate_per_100000_people`,`consumption_per_smoker_per_day`,`YYear`) VALUES(?,?,?,?,?,?)': OK
+[94, 21:57:09] DEALLOCATE PREPARE stmt: Executing 
+[94, 21:57:09] DEALLOCATE PREPARE stmt: OK
+[95, 21:57:26] SELECT * FROM Smoke_Examine
+LIMIT 0, 1000
+: Running...
+[95, 21:57:26] SELECT * FROM Smoke_Examine
+LIMIT 0, 1000
+: Fetching...
+[95, 21:57:26] SELECT * FROM Smoke_Examine
+LIMIT 0, 1000
+: 1000 row(s) returned
+[96, 21:58:00] drop table Smoke_Examine: Running...
+[96, 21:58:00] drop table Smoke_Examine: 0 row(s) affected
+[1, 22:27:24] USE project: Running...
+[1, 22:27:24] USE project: 0 row(s) affected
+[2, 22:27:37] SELECT COUNT(*) FROM countries
+LIMIT 0, 1000
+: Running...
+[2, 22:27:37] SELECT COUNT(*) FROM countries
+LIMIT 0, 1000
+: Fetching...
+[2, 22:27:38] SELECT COUNT(*) FROM countries
+LIMIT 0, 1000
+: 1 row(s) returned
+[3, 22:28:06] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: Running...
+[3, 22:28:06] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: Fetching...
+[3, 22:28:06] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: 1 row(s) returned
+[4, 22:28:34] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: Running...
+[4, 22:28:34] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: Fetching...
+[4, 22:28:34] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: 1 row(s) returned
+[5, 22:28:51] SELECT COUNT(*) FROM LifeExpact
+LIMIT 0, 1000
+: Running...
+[5, 22:28:51] SELECT COUNT(*) FROM LifeExpact
+LIMIT 0, 1000
+: Fetching...
+[5, 22:28:51] SELECT COUNT(*) FROM LifeExpact
+LIMIT 0, 1000
+: 1 row(s) returned
+[6, 22:29:31] SELECT COUNT(*) FROM Obesity_Report
+LIMIT 0, 1000
+: Running...
+[6, 22:29:31] SELECT COUNT(*) FROM Obesity_Report
+LIMIT 0, 1000
+: Fetching...
+[6, 22:29:31] SELECT COUNT(*) FROM Obesity_Report
+LIMIT 0, 1000
+: 1 row(s) returned
+[7, 22:29:55] SELECT COUNT(*) FROM Smoke_Examine
+LIMIT 0, 1000
+: Running...
+[7, 22:29:55] SELECT COUNT(*) FROM Smoke_Examine
+LIMIT 0, 1000
+: Error Code: 1146. Table 'project.smoke_examine' doesn't exist
+[8, 22:30:02] SELECT COUNT(*) FROM Obesity_Report
+LIMIT 0, 1000
+: Running...
+[8, 22:30:02] SELECT COUNT(*) FROM Obesity_Report
+LIMIT 0, 1000
+: Fetching...
+[8, 22:30:02] SELECT COUNT(*) FROM Obesity_Report
+LIMIT 0, 1000
+: 1 row(s) returned
+[9, 22:30:37] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: Running...
+[9, 22:30:37] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: Fetching...
+[9, 22:30:37] SELECT * FROM airpol_occure
+LIMIT 0, 1000
+: 1000 row(s) returned
+[10, 22:30:40] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: Running...
+[10, 22:30:40] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: Fetching...
+[10, 22:30:40] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: 1 row(s) returned
+[11, 22:39:13] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: Running...
+[11, 22:39:13] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: Fetching...
+[11, 22:39:14] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: 1 row(s) returned
+[12, 22:40:31] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: Running...
+[12, 22:40:31] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: Fetching...
+[12, 22:40:31] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: 1 row(s) returned
+[13, 22:50:31] drop table substance_use: Running...
+[13, 22:50:31] drop table substance_use: 0 row(s) affected
+[14, 22:50:38] CREATE TABLE substance_use (
+    C_Code CHAR(32) NOT NULL,
+    YYear INTEGER,
+    drugdeaths INTEGER,
+    alcoholdeaths INTEGER,
+    PRIMARY KEY (C_Code, YYear),
+    FOREIGN KEY (C_Code)
+        REFERENCES countries(C_Code)
+        ON DELETE CASCADE
+): Running...
+[14, 22:50:38] CREATE TABLE substance_use (
+    C_Code CHAR(32) NOT NULL,
+    YYear INTEGER,
+    drugdeaths INTEGER,
+    alcoholdeaths INTEGER,
+    PRIMARY KEY (C_Code, YYear),
+    FOREIGN KEY (C_Code)
+        REFERENCES countries(C_Code)
+        ON DELETE CASCADE
+): 0 row(s) affected
+[15, 22:50:54] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[15, 22:50:54] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[16, 22:50:54] SHOW DATABASES: Executing 
+[16, 22:50:54] SHOW DATABASES: OK
+[17, 22:50:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[17, 22:50:55] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[18, 22:50:55] SHOW COLUMNS FROM `project`.`substance_use`: Executing 
+[18, 22:50:55] SHOW COLUMNS FROM `project`.`substance_use`: OK
+[19, 22:51:10] PREPARE stmt FROM 'INSERT INTO `project`.`substance_use` (`alcoholdeaths`,`C_Code`,`drugdeaths`,`YYear`) VALUES(?,?,?,?)': Executing 
+[19, 22:51:10] PREPARE stmt FROM 'INSERT INTO `project`.`substance_use` (`alcoholdeaths`,`C_Code`,`drugdeaths`,`YYear`) VALUES(?,?,?,?)': OK
+[20, 22:52:47] DEALLOCATE PREPARE stmt: Executing 
+[20, 22:52:47] DEALLOCATE PREPARE stmt: OK
+[21, 22:53:05] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: Running...
+[21, 22:53:05] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: Fetching...
+[21, 22:53:05] SELECT COUNT(*) FROM substance_use
+LIMIT 0, 1000
+: 1 row(s) returned
+[22, 23:07:59] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: Running...
+[22, 23:07:59] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: Fetching...
+[22, 23:07:59] SELECT COUNT(*) FROM airpol_occure
+LIMIT 0, 1000
+: 1 row(s) returned
